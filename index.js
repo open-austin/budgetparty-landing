@@ -54,7 +54,7 @@ export default class Landing extends Component {
             <li className="bubble"><img src="https://randomuser.me/api/portraits/women/85.jpg" height="100" width="100"/></li>
             <li className="bubble"><img src="https://randomuser.me/api/portraits/men/86.jpg" height="100" width="100"/></li>
           </ul>
-          <ul>
+          <ul className="link-list">
             <li><a href="#">Open Budget Party</a></li>
             <li><a href="#">Application</a></li>
             <li><a href="#">Get Involved</a></li>
