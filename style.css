@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300i,500,700,800');
+
+#landing {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+#landing h1,
+#landing h2,
+#landing h3,
+#landing h4, {
+  text-transform: capitalize;
+  color: #2e4C66;
+}
+
+#landing h1 {
+  font-size: 57px;
+  font-weight: 800;
+}
+
+#landing h2 {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+#landing h3 {
+  font-size: 27px;
+  font-weight: 500;
+}
+
+#landing h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#landing a {
+  color: #2FAFDE;
+}
