@@ -237,12 +237,32 @@ var Landing = function (_Component) {
             ),
             _react2.default.createElement(
               'ul',
-              null,
-              _react2.default.createElement('li', null),
-              _react2.default.createElement('li', null),
-              _react2.default.createElement('li', null),
-              _react2.default.createElement('li', null),
-              _react2.default.createElement('li', null)
+              { className: 'bubble-list' },
+              _react2.default.createElement(
+                'li',
+                { className: 'bubble' },
+                _react2.default.createElement('img', { src: 'https://randomuser.me/api/portraits/men/83.jpg', height: '100', width: '100' })
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'bubble' },
+                _react2.default.createElement('img', { src: 'https://randomuser.me/api/portraits/women/84.jpg', height: '100', width: '100' })
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'bubble' },
+                _react2.default.createElement('img', { src: 'https://randomuser.me/api/portraits/men/85.jpg', height: '100', width: '100' })
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'bubble' },
+                _react2.default.createElement('img', { src: 'https://randomuser.me/api/portraits/women/86.jpg', height: '100', width: '100' })
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'bubble' },
+                _react2.default.createElement('img', { src: 'https://randomuser.me/api/portraits/men/86.jpg', height: '100', width: '100' })
+              )
             ),
             _react2.default.createElement(
               'p',
@@ -283,11 +303,27 @@ var Landing = function (_Component) {
             ),
             _react2.default.createElement(
               'ul',
-              null,
-              _react2.default.createElement('li', null),
-              _react2.default.createElement('li', null),
-              _react2.default.createElement('li', null),
-              _react2.default.createElement('li', null)
+              { className: 'bubble-list' },
+              _react2.default.createElement(
+                'li',
+                { className: 'bubble' },
+                _react2.default.createElement('img', { src: 'https://randomuser.me/api/portraits/women/83.jpg', height: '100', width: '100' })
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'bubble' },
+                _react2.default.createElement('img', { src: 'https://randomuser.me/api/portraits/men/84.jpg', height: '100', width: '100' })
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'bubble' },
+                _react2.default.createElement('img', { src: 'https://randomuser.me/api/portraits/women/85.jpg', height: '100', width: '100' })
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'bubble' },
+                _react2.default.createElement('img', { src: 'https://randomuser.me/api/portraits/men/86.jpg', height: '100', width: '100' })
+              )
             ),
             _react2.default.createElement(
               'ul',
@@ -535,7 +571,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Raleway:300i,500,700,800);", ""]);
 
 // module
-exports.push([module.i, "#landing {\n  font-family: 'Raleway', sans-serif;\n  font-size: 18px;\n  font-weight: 500;\n  line-height: 30px;\n  color: #2e4C66;\n  -webkit-font-smoothing: antialiased;\n}\n\n#landing h1,\n#landing h2,\n#landing h3,\n#landing h4 {\n  text-transform: capitalize;\n  color: #2e4C66;\n}\n\n#landing h1 {\n  font-size: 57px;\n  font-weight: 800;\n  line-height: 68px;\n}\n\n#landing h2 {\n  font-size: 35px;\n  font-weight: 800;\n  line-height: 50px;\n}\n\n#landing h3 {\n  font-size: 27px;\n  font-weight: 500;\n  line-height: 38px;\n}\n\n#landing h4 {\n  font-size: 18px;\n  font-weight: 700;\n}\n\n#landing a {\n  color: #2FAFDE;\n  text-decoration: none;\n}\n\n#landing a:hover {\n  text-decoration: underline;\n}\n\n#landing .container {\n  margin: 0 auto;\n  text-align: center;\n  max-width: 500px;\n}\n\n#landing .btn {\n  padding: 1em 2em;\n  background-color: #2FAFDE;\n  color: #ffffff;\n  border: none;\n  border-radius: 20px;\n  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1);\n  transition: all .2s ease;\n  cursor: pointer;\n}\n\n#landing .btn:hover {\n  background-color: #2E4C66;\n}\n\n#landing .btn.btn-secondary {\n  color: #2FAFDE;\n  background-color: #ffffff;\n}\n\n#landing .btn.btn-secondary:hover {\n  color: #2FAFDE;\n  background-color: #D5F6FF;\n}\n\n#landing .section {\n  padding: 1em;\n}\n\n#landing .section-secondary {\n  background-color: #2FAFDE;\n  color: #ffffff;\n}\n\n#landing .section-tertiary {\n  background-color: #D5F6FF;\n  color: #ffffff;\n}\n\n#landing .header-light {\n  color: #fff;\n}\n\n#landing em {\n  font-size: 18px;\n  line-height: 30px;\n  font-weight: 300;\n  font-style: italic;\n}", ""]);
+exports.push([module.i, "#landing {\n  font-family: 'Raleway', sans-serif;\n  font-size: 18px;\n  font-weight: 500;\n  line-height: 30px;\n  color: #2e4C66;\n  -webkit-font-smoothing: antialiased;\n}\n\n#landing h1,\n#landing h2,\n#landing h3,\n#landing h4 {\n  text-transform: capitalize;\n  color: #2e4C66;\n}\n\n#landing h1 {\n  font-size: 57px;\n  font-weight: 800;\n  line-height: 68px;\n}\n\n#landing h2 {\n  font-size: 35px;\n  font-weight: 800;\n  line-height: 50px;\n}\n\n#landing h3 {\n  font-size: 27px;\n  font-weight: 500;\n  line-height: 38px;\n}\n\n#landing h4 {\n  font-size: 18px;\n  font-weight: 700;\n}\n\n#landing a {\n  color: #2FAFDE;\n  text-decoration: none;\n}\n\n#landing a:hover {\n  text-decoration: underline;\n}\n\n#landing .container {\n  margin: 0 auto;\n  text-align: center;\n  max-width: 500px;\n}\n\n#landing .btn {\n  padding: 1em 2em;\n  background-color: #2FAFDE;\n  color: #ffffff;\n  border: none;\n  border-radius: 20px;\n  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1);\n  transition: all .2s ease;\n  cursor: pointer;\n}\n\n#landing .btn:hover {\n  background-color: #2E4C66;\n}\n\n#landing .btn.btn-secondary {\n  color: #2FAFDE;\n  background-color: #ffffff;\n}\n\n#landing .btn.btn-secondary:hover {\n  color: #2FAFDE;\n  background-color: #D5F6FF;\n}\n\n#landing .section {\n  padding: 1em;\n}\n\n#landing .section-secondary {\n  background-color: #2FAFDE;\n  color: #ffffff;\n}\n\n#landing .section-tertiary {\n  background-color: #D5F6FF;\n  color: #ffffff;\n}\n\n#landing .header-light {\n  color: #fff;\n}\n\n#landing em {\n  font-size: 18px;\n  line-height: 30px;\n  font-weight: 300;\n  font-style: italic;\n}\n\n#landing .bubble-list {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n#landing .bubble {\n  display: inline-block;\n  transition: all .2s ease;\n  margin: 1em;\n}\n\n#landing .bubble:hover {\n  transform: scale(1.2) rotate(5deg);\n}\n\n#landing .bubble img {\n  border-radius: 100px;\n}\n", ""]);
 
 // exports
 

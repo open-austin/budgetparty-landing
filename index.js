@@ -30,12 +30,12 @@ export default class Landing extends Component {
           <h1>It's A Party!</h1>
           <h3>Let’s work together to make Participatory Budgeting work for our city</h3>
           <p><em>A few of our Budget Party</em></p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul className="bubble-list">
+            <li className="bubble"><img src="https://randomuser.me/api/portraits/men/83.jpg" height="100" width="100"/></li>
+            <li className="bubble"><img src="https://randomuser.me/api/portraits/women/84.jpg" height="100" width="100"/></li>
+            <li className="bubble"><img src="https://randomuser.me/api/portraits/men/85.jpg" height="100" width="100"/></li>
+            <li className="bubble"><img src="https://randomuser.me/api/portraits/women/86.jpg" height="100" width="100"/></li>
+            <li className="bubble"><img src="https://randomuser.me/api/portraits/men/86.jpg" height="100" width="100"/></li>
           </ul>
           <p>We want to work with our neighbors to create an open source platform for citizen inclusion</p>
           <p>Our team currently includes developers, designers, a publisher, a curriculum writer and educators</p>
@@ -48,11 +48,11 @@ export default class Landing extends Component {
         <div className="container">
           <h1>Support & More</h1>
           <h3>A few of the awesome organizations that have funded and supported budget party.</h3>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul className="bubble-list">
+            <li className="bubble"><img src="https://randomuser.me/api/portraits/women/83.jpg" height="100" width="100"/></li>
+            <li className="bubble"><img src="https://randomuser.me/api/portraits/men/84.jpg" height="100" width="100"/></li>
+            <li className="bubble"><img src="https://randomuser.me/api/portraits/women/85.jpg" height="100" width="100"/></li>
+            <li className="bubble"><img src="https://randomuser.me/api/portraits/men/86.jpg" height="100" width="100"/></li>
           </ul>
           <ul>
             <li><a href="#">Open Budget Party</a></li>
