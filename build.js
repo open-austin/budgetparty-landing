@@ -147,33 +147,197 @@ var Landing = function (_Component) {
         'div',
         { id: 'landing' },
         _react2.default.createElement(
-          'h1',
-          null,
-          'hi'
-        ),
-        _react2.default.createElement(
-          'h2',
-          null,
-          'h2 example'
-        ),
-        _react2.default.createElement(
-          'h3',
-          null,
-          'h3 example'
-        ),
-        _react2.default.createElement(
-          'h4',
-          null,
-          'h4 example'
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          'a paragraph a ',
+          'section',
+          { className: 'section' },
           _react2.default.createElement(
-            'a',
-            { href: '#' },
-            'paragraph'
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'h1',
+              null,
+              'Budget Party'
+            ),
+            _react2.default.createElement(
+              'h3',
+              null,
+              'Understand & Augment a City Budget for Austin'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                'button',
+                { className: 'btn' },
+                'Start Budgeting'
+              )
+            ),
+            _react2.default.createElement(
+              'h1',
+              null,
+              'You Have a Voice!'
+            ),
+            _react2.default.createElement(
+              'h3',
+              null,
+              'City Spending Doesn\'t Have to Be Mystical'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Commuting, construction, parks, public safety\u2014every day you are impacted by city budget decisions.'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'section',
+          { className: 'section section-secondary' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'h1',
+              { className: 'header-light' },
+              'Try Out The Beta Version Of Budget Party'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                'button',
+                { className: 'btn btn-secondary' },
+                'Start Budgeting'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'section',
+          { className: 'section' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'h1',
+              null,
+              'It\'s A Party!'
+            ),
+            _react2.default.createElement(
+              'h3',
+              null,
+              'Let\u2019s work together to make Participatory Budgeting work for our city'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                'em',
+                null,
+                'A few of our Budget Party'
+              )
+            ),
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement('li', null),
+              _react2.default.createElement('li', null),
+              _react2.default.createElement('li', null),
+              _react2.default.createElement('li', null),
+              _react2.default.createElement('li', null)
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'We want to work with our neighbors to create an open source platform for citizen inclusion'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Our team currently includes developers, designers, a publisher, a curriculum writer and educators'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                'button',
+                { className: 'btn' },
+                'Start Budgeting'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'section',
+          { className: 'section section-tertiary' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'h1',
+              null,
+              'Support & More'
+            ),
+            _react2.default.createElement(
+              'h3',
+              null,
+              'A few of the awesome organizations that have funded and supported budget party.'
+            ),
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement('li', null),
+              _react2.default.createElement('li', null),
+              _react2.default.createElement('li', null),
+              _react2.default.createElement('li', null)
+            ),
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  'Open Budget Party'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  'Application'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  'Get Involved'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  'View Budget Party on Github'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  'Contact or Submit Feedback'
+                )
+              )
+            )
           )
         )
       );
@@ -371,7 +535,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Raleway:300i,500,700,800);", ""]);
 
 // module
-exports.push([module.i, "#landing {\n  font-family: 'Raleway', sans-serif;\n  font-size: 18px;\n  font-weight: 500;\n  line-height: 30px;\n}\n\n#landing h1,\n#landing h2,\n#landing h3,\n#landing h4, {\n  text-transform: capitalize;\n  color: #2e4C66;\n}\n\n#landing h1 {\n  font-size: 57px;\n  font-weight: 800;\n}\n\n#landing h2 {\n  font-size: 35px;\n  font-weight: 800;\n}\n\n#landing h3 {\n  font-size: 27px;\n  font-weight: 500;\n}\n\n#landing h4 {\n  font-size: 18px;\n  font-weight: 700;\n}\n\n#landing a {\n  color: #2FAFDE;\n}\n", ""]);
+exports.push([module.i, "#landing {\n  font-family: 'Raleway', sans-serif;\n  font-size: 18px;\n  font-weight: 500;\n  line-height: 30px;\n  color: #2e4C66;\n  -webkit-font-smoothing: antialiased;\n}\n\n#landing h1,\n#landing h2,\n#landing h3,\n#landing h4 {\n  text-transform: capitalize;\n  color: #2e4C66;\n}\n\n#landing h1 {\n  font-size: 57px;\n  font-weight: 800;\n  line-height: 68px;\n}\n\n#landing h2 {\n  font-size: 35px;\n  font-weight: 800;\n  line-height: 50px;\n}\n\n#landing h3 {\n  font-size: 27px;\n  font-weight: 500;\n  line-height: 38px;\n}\n\n#landing h4 {\n  font-size: 18px;\n  font-weight: 700;\n}\n\n#landing a {\n  color: #2FAFDE;\n  text-decoration: none;\n}\n\n#landing a:hover {\n  text-decoration: underline;\n}\n\n#landing .container {\n  margin: 0 auto;\n  text-align: center;\n  max-width: 500px;\n}\n\n#landing .btn {\n  padding: 1em 2em;\n  background-color: #2FAFDE;\n  color: #ffffff;\n  border: none;\n  border-radius: 20px;\n  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1);\n  transition: all .2s ease;\n  cursor: pointer;\n}\n\n#landing .btn:hover {\n  background-color: #2E4C66;\n}\n\n#landing .btn.btn-secondary {\n  color: #2FAFDE;\n  background-color: #ffffff;\n}\n\n#landing .btn.btn-secondary:hover {\n  color: #2FAFDE;\n  background-color: #D5F6FF;\n}\n\n#landing .section {\n  padding: 1em;\n}\n\n#landing .section-secondary {\n  background-color: #2FAFDE;\n  color: #ffffff;\n}\n\n#landing .section-tertiary {\n  background-color: #D5F6FF;\n  color: #ffffff;\n}\n\n#landing .header-light {\n  color: #fff;\n}\n\n#landing em {\n  font-size: 18px;\n  line-height: 30px;\n  font-weight: 300;\n  font-style: italic;\n}", ""]);
 
 // exports
 

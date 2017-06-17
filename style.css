@@ -5,12 +5,14 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
+  color: #2e4C66;
+  -webkit-font-smoothing: antialiased;
 }
 
 #landing h1,
 #landing h2,
 #landing h3,
-#landing h4, {
+#landing h4 {
   text-transform: capitalize;
   color: #2e4C66;
 }
@@ -18,16 +20,19 @@
 #landing h1 {
   font-size: 57px;
   font-weight: 800;
+  line-height: 68px;
 }
 
 #landing h2 {
   font-size: 35px;
   font-weight: 800;
+  line-height: 50px;
 }
 
 #landing h3 {
   font-size: 27px;
   font-weight: 500;
+  line-height: 38px;
 }
 
 #landing h4 {
@@ -37,4 +42,65 @@
 
 #landing a {
   color: #2FAFDE;
+  text-decoration: none;
+}
+
+#landing a:hover {
+  text-decoration: underline;
+}
+
+#landing .container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 500px;
+}
+
+#landing .btn {
+  padding: 1em 2em;
+  background-color: #2FAFDE;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+#landing .btn:hover {
+  background-color: #2E4C66;
+}
+
+#landing .btn.btn-secondary {
+  color: #2FAFDE;
+  background-color: #ffffff;
+}
+
+#landing .btn.btn-secondary:hover {
+  color: #2FAFDE;
+  background-color: #D5F6FF;
+}
+
+#landing .section {
+  padding: 1em;
+}
+
+#landing .section-secondary {
+  background-color: #2FAFDE;
+  color: #ffffff;
+}
+
+#landing .section-tertiary {
+  background-color: #D5F6FF;
+  color: #ffffff;
+}
+
+#landing .header-light {
+  color: #fff;
+}
+
+#landing em {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  font-style: italic;
 }
