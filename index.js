@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import Contributors from './components/contributors';
 
+import logoAustinMonitor from './img/austin-monitor-circle-logo.png';
+import logoGlasshouse from './img/glasshouse-policy-circle-logo.png';
+import logoMozilla from './img/mozilla-circle-logo.png';
+import logoOpenAustin from './img/open-austin-circle-logo.png';
+
 require('./style.css');
 
 export default class Landing extends Component {
@@ -55,10 +60,10 @@ export default class Landing extends Component {
           <h1>Support & More</h1>
           <h3>A few of the awesome organizations that have funded and supported budget party.</h3>
           <ul className="bubble-list">
-            <li className="bubble"><img src="https://randomuser.me/api/portraits/women/83.jpg" height="100" width="100"/></li>
-            <li className="bubble"><img src="https://randomuser.me/api/portraits/men/84.jpg" height="100" width="100"/></li>
-            <li className="bubble"><img src="https://randomuser.me/api/portraits/women/85.jpg" height="100" width="100"/></li>
-            <li className="bubble"><img src="https://randomuser.me/api/portraits/men/86.jpg" height="100" width="100"/></li>
+            <li className="bubble"><img src={logoAustinMonitor} height="100" width="100"/></li>
+            <li className="bubble"><img src={logoGlasshouse} height="100" width="100"/></li>
+            <li className="bubble"><img src={logoMozilla} height="100" width="100"/></li>
+            <li className="bubble"><img src={logoOpenAustin} height="100" width="100"/></li>
           </ul>
           <ul className="link-list">
             <li><a href="#">Open Budget Party</a></li>
