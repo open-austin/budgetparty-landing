@@ -5,6 +5,7 @@ import logoAustinMonitor from './img/austin-monitor-circle-logo.png';
 import logoGlasshouse from './img/glasshouse-policy-circle-logo.png';
 import logoMozilla from './img/mozilla-circle-logo.png';
 import logoOpenAustin from './img/open-austin-circle-logo.png';
+import iconVoice from './img/voice-icon.svg';
 
 require('./style.css');
 
@@ -31,6 +32,7 @@ export default class Landing extends Component {
           </p>
           <h1>You Have a Voice!</h1>
           <h3>City Spending Doesn't Have to Be Mystical</h3>
+          <div className="icon-voice" dangerouslySetInnerHTML={{__html: iconVoice}}/>
           <p>Commuting, construction, parks, public safety—every day you are impacted by city budget decisions.</p>
         </div>
       </section>

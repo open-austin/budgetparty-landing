@@ -9,7 +9,7 @@ export default ({contributors}) => {
 const Contributor = ({avatar, href, dimensions}) => {
   return (
     <li className="bubble">
-      <img src={avatar} height={dimensions} width={dimensions}/>
+      <a className="bubble-link" href={href}><img src={avatar} height={dimensions} width={dimensions}/></a>
     </li>
   );
 };

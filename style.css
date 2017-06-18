@@ -153,3 +153,8 @@
 #landing .bubble img {
   border-radius: 100px;
 }
+
+#landing .icon-voice {
+  max-width: 200px;
+  margin: 0 auto;
+}
