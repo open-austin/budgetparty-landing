@@ -1,6 +1,6 @@
 {
   "name": "budgetparty-landing",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Budget Party Landing component",
   "main": "build.js",
   "scripts": {
