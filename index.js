@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
+import Contributors from './components/contributors';
 
 require('./style.css');
 
 export default class Landing extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { contributors: [] };
+  }
+
+  componentWillMount() {
+    fetch(this.props.contributorsURL)
+      .then(response => response.json())
+      .then(contributors => this.setState({ contributors }));
+  }
+
   render() {
     return <div id="landing">
       <section className="section">
@@ -30,13 +42,7 @@ export default class Landing extends Component {
           <h1>It's A Party!</h1>
           <h3>Let’s work together to make Participatory Budgeting work for our city</h3>
           <p><em>A few of our Budget Party</em></p>
-          <ul className="bubble-list">
-            <li className="bubble"><img src="https://randomuser.me/api/portraits/men/83.jpg" height="100" width="100"/></li>
-            <li className="bubble"><img src="https://randomuser.me/api/portraits/women/84.jpg" height="100" width="100"/></li>
-            <li className="bubble"><img src="https://randomuser.me/api/portraits/men/85.jpg" height="100" width="100"/></li>
-            <li className="bubble"><img src="https://randomuser.me/api/portraits/women/86.jpg" height="100" width="100"/></li>
-            <li className="bubble"><img src="https://randomuser.me/api/portraits/men/86.jpg" height="100" width="100"/></li>
-          </ul>
+          <Contributors contributors={this.state.contributors}/>
           <p>We want to work with our neighbors to create an open source platform for citizen inclusion</p>
           <p>Our team currently includes developers, designers, a publisher, a curriculum writer and educators</p>
           <p>
@@ -66,3 +72,7 @@ export default class Landing extends Component {
     </div>;
   }
 }
+
+Landing.defaultProps = {
+  contributorsURL: 'https://api.github.com/repos/open-austin/budgetparty/contributors'
+};

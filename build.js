@@ -121,6 +121,10 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _contributors = __webpack_require__(7);
+
+var _contributors2 = _interopRequireDefault(_contributors);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -134,13 +138,27 @@ __webpack_require__(0);
 var Landing = function (_Component) {
   _inherits(Landing, _Component);
 
-  function Landing() {
+  function Landing(props) {
     _classCallCheck(this, Landing);
 
-    return _possibleConstructorReturn(this, (Landing.__proto__ || Object.getPrototypeOf(Landing)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (Landing.__proto__ || Object.getPrototypeOf(Landing)).call(this, props));
+
+    _this.state = { contributors: [] };
+    return _this;
   }
 
   _createClass(Landing, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      var _this2 = this;
+
+      fetch(this.props.contributorsURL).then(function (response) {
+        return response.json();
+      }).then(function (contributors) {
+        return _this2.setState({ contributors: contributors });
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -235,35 +253,7 @@ var Landing = function (_Component) {
                 'A few of our Budget Party'
               )
             ),
-            _react2.default.createElement(
-              'ul',
-              { className: 'bubble-list' },
-              _react2.default.createElement(
-                'li',
-                { className: 'bubble' },
-                _react2.default.createElement('img', { src: 'https://randomuser.me/api/portraits/men/83.jpg', height: '100', width: '100' })
-              ),
-              _react2.default.createElement(
-                'li',
-                { className: 'bubble' },
-                _react2.default.createElement('img', { src: 'https://randomuser.me/api/portraits/women/84.jpg', height: '100', width: '100' })
-              ),
-              _react2.default.createElement(
-                'li',
-                { className: 'bubble' },
-                _react2.default.createElement('img', { src: 'https://randomuser.me/api/portraits/men/85.jpg', height: '100', width: '100' })
-              ),
-              _react2.default.createElement(
-                'li',
-                { className: 'bubble' },
-                _react2.default.createElement('img', { src: 'https://randomuser.me/api/portraits/women/86.jpg', height: '100', width: '100' })
-              ),
-              _react2.default.createElement(
-                'li',
-                { className: 'bubble' },
-                _react2.default.createElement('img', { src: 'https://randomuser.me/api/portraits/men/86.jpg', height: '100', width: '100' })
-              )
-            ),
+            _react2.default.createElement(_contributors2.default, { contributors: this.state.contributors }),
             _react2.default.createElement(
               'p',
               null,
@@ -384,6 +374,11 @@ var Landing = function (_Component) {
 }(_react.Component);
 
 exports.default = Landing;
+
+
+Landing.defaultProps = {
+  contributorsURL: 'https://api.github.com/repos/open-austin/budgetparty/contributors'
+};
 
 /***/ }),
 /* 3 */
@@ -934,6 +929,47 @@ function updateLink (link, options, obj) {
 	if(oldSrc) URL.revokeObjectURL(oldSrc);
 }
 
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (_ref) {
+  var contributors = _ref.contributors;
+
+  return _react2.default.createElement(
+    "ul",
+    { className: "bubble-list" },
+    contributors.map(function (c) {
+      return _react2.default.createElement(Contributor, { key: c.id, avatar: c.avatar_url, href: c.html_url, dimensions: "100" });
+    })
+  );
+};
+
+var Contributor = function Contributor(_ref2) {
+  var avatar = _ref2.avatar,
+      href = _ref2.href,
+      dimensions = _ref2.dimensions;
+
+  return _react2.default.createElement(
+    "li",
+    { className: "bubble" },
+    _react2.default.createElement("img", { src: avatar, height: dimensions, width: dimensions })
+  );
+};
 
 /***/ })
 /******/ ]);
